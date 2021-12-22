@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  @include font(14px, 1.17, 0.03em);
+}
+
+.footer-mail,
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  @include font(14px, 1.71);
+}
+
+.footer-center,
+.footer-left__contacts,
+.footer-center__socials,
+.footer-center__socials-link,
+.footer-left {
+  display: flex;  
+}
+
+.footer > .container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.footer-left {
+  flex-direction: column;
+}
+.footer-center {
+  flex-direction: column;  
+  width: 206px;
+  height: 80px;
+  margin-left: auto;
+}
+
+.footer-center__title {
+  @include font(14px, 1.14, 0.03em, 700);
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+
+.footer-center__socials {
+  justify-content: center;  
+}
+
+.footer-center__socials-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-center__socials-item {
+  & + & {
+  margin-left: 10px;
+}
+}
+
+.footer-center__socials-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus, &:hover {
+  background-color: var(--accent-color); 
+  }
+  .footer-center__socials-icon {
+  fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus .footer-center__socials-icon, &:hover .footer-center__socials-icon {
+  fill: var(--secondary-text-color);
+  }
+}
+
+/* Форма футера Подпишись */
+
+.footer-right {
+  margin-left: auto;
+}
+
+.signup-form__mail {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding: 15px 0 15px 16px;
+  color: var(--secondary-text-color);
+}
+
+.signup-form__wrap {
+  display: flex;
+  justify-content: space-between;  
+}
+
+.signup-form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 29px;
+}
+
+.signup-form__button-icon {
+  margin-left: 10px;
+  fill: var(--secondary-text-color);
+}

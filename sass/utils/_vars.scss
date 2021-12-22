@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-text-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --button-color: #f5f4fa;
+  --studio-color: #000;
+  --header-border-color: #ECECEC;
+  --portfolio-cards-border-color: #EEEEEE;
+  --icon-color: #AFB1B8;
+}
